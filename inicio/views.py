@@ -18,6 +18,7 @@ def inicio(request):
 def manual(request):
     return render(request, 'inicio/manual.html')
 
+
 def log(request):
     if request.method == 'POST':
         form = CustomAuthenticationForm(data=request.POST)
