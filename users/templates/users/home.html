@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Espacio de Reclamaciones</title>
+    <link rel="stylesheet" href="../../static/users/css/homestyle.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <h1>Espacio de Reclamaciones</h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="tab" onclick="toggleFiles('registro1')">Registro1</div>
+            <div class="files" id="registro1">
+                <a href="pagina1.html">Archivo1</a>
+                <a href="pagina2.html">Archivo2</a>
+            </div>
+            <div class="tab" onclick="toggleFiles('registro2')">Registro2</div>
+            <div class="files" id="registro2">
+                <a href="pagina3.html">Archivo3</a>
+                <a href="pagina4.html">Archivo4</a>
+            </div>
+            <div class="tab" onclick="toggleFiles('registro3')">Registro3</div>
+            <div class="files" id="registro3">
+                <a href="pagina5.html">Archivo5</a>
+                <a href="pagina6.html">Archivo6</a>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <button>Botón 1</button>
+                <button>Botón 2</button>
+                <button>Botón 3</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/users/js/homejs.js"></script>
 </body>
 </html>

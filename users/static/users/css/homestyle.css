@@ -1,0 +1,53 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.files {
+    display: none;
+    padding-left: 20px;
+}
+
+.files a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.files a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.content button {
+    margin-right: 10px;
+    padding: 10px 20px;
+}
