@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espacio de Reclamaciones</title>
     {% load static %}
+    <script src="{% static 'users/js/homejs.js'%}"></script>
     <link rel="stylesheet" href="{% static 'users/css/homestyle.css'%}">
 </head>
 
@@ -31,12 +32,13 @@
         </div>
         <div class="content">
             <div>
-                <button>Botón 1</button>
+                <a href="./nueva_reclamacion.html">
+                    <button>Botón 1</button>
+                </a>
                 <button>Botón 2</button>
                 <button>Botón 3</button>
             </div>
         </div>
     </div>
-    <script src="../../static/users/js/homejs.js"></script>
 </body>
 </html>

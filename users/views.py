@@ -32,7 +32,7 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return render(request, 'users/home.html', {'form': form})
+                return redirect('../home')
             else:
                 messages.error(request, 'Invalid username or password')
     else:
@@ -41,8 +41,8 @@ def user_login(request):
 
 @login_required
 def home(request):
-    
-    return render(request, '../../users/home.html')
+
+    return render(request, 'users/home.html')
 
 @login_required
 def nueva_reclamacion(request):
@@ -56,4 +56,4 @@ def nueva_reclamacion(request):
             return redirect('../')
     else:
         form = ReclamationForm()
-    return render(request, 'nueva_reclamacion.html', {'form': form})
+    return render(request, 'users/nueva_reclamacion.html', {'form': form})
